@@ -9,6 +9,7 @@ import { EmployeeService } from './services/employee-service.service'
 import { EmployeeListComponent } from './pages/employee-list/employee-list.component';
 import { EmployeeDetailComponent } from './pages/employee-detail/employee-detail.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
