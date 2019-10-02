@@ -5,12 +5,15 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AboutComponent } from './pages/about/about.component';
+import { EmployeeService } from './services/employee-service.service'
+import { EmployeeListComponent } from './pages/employee-list/employee-list.component';
+import { EmployeeDetailComponent } from './pages/employee-detail/employee-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent
+    EmployeeListComponent,
+    EmployeeDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -18,7 +21,7 @@ import { AboutComponent } from './pages/about/about.component';
     HttpClientModule,
     FormsModule,
   ],
-  providers: [],
+  providers: [EmployeeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
