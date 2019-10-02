@@ -1,1 +1,6 @@
-<p>employee-list works!</p>
+<h2>Employee LIst</h2>
+<ul *ngFor="let employee of employees">
+  <li (click)="onSelect(employee)">
+    <a>{{ employee.name }}</a>
+  </li>
+</ul>
